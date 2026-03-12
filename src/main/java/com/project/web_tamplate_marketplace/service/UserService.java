@@ -25,7 +25,7 @@ public class UserService {
         userRepository.deleteById(id);
     }
 
-    public User saveUser(User user){
+    public User createUser(User user){
         return userRepository.save(user);
     }
 }
