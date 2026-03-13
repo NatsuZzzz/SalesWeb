@@ -31,4 +31,9 @@ public class Order {
     @JoinColumn(name = "buyer_id")
     private User buyer;
 
+    public void setStatus(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setStatus'");
+    }
+
 }
