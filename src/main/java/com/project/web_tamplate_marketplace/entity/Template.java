@@ -40,4 +40,9 @@ public class Template {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    public void setStatus(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setStatus'");
+    }
+
 }
