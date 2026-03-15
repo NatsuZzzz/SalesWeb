@@ -5,8 +5,14 @@ import java.time.LocalDateTime;
 import java.util.Locale.Category;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Entity
 @Table(name = "templates")
 public class Template {
@@ -40,9 +46,6 @@ public class Template {
     @JoinColumn(name = "category_id")
     private Category category;
 
-    public void setStatus(String string) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setStatus'");
-    }
+
 
 }

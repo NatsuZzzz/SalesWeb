@@ -40,8 +40,35 @@ public class TemplateService {
             template.setDescription(templateDetails.getDescription());
             template.setPriceSource(templateDetails.getPriceSource());
             template.setPriceMaintenance(templateDetails.getPriceMaintenance());
-            template.setThumnail(templateDetails.getThumnail());  
+            template.setThumbnail(templateDetails.getThumbnail());
+
+            return templateRepository.save(template);  
         }
+        return null;
     }
 
+    public void deleteTemplate(Long id) {
+        templateRepository.deleteById(id);
+    }
+
+    public List<Template> getTemplatesByCategory(Long categoryId) {
+        return templateRepository.findByCategoryId(categoryId);
+    }
+
+    public List<Template> getTemplatesBySeller(Long sellerId) {
+        return templateRepository.findBySellerId(sellerId);
+    }
+
+    public Template approveTemplate(Long id){
+
+        Template template = templateRepository.findById(id).orElse(null);
+
+        if(template != null){
+            template.setStatus("approved");
+            return templateRepository.save(template);
+        }
+
+        return null;
+
+}
 }
