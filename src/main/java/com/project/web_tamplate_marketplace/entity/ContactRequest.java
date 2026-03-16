@@ -31,4 +31,10 @@ public class ContactRequest {
     @JoinColumn(name = "seller_id")
     private User seller;
 
+    public void setStatus(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setStatus'");
+    }
+
+
 }

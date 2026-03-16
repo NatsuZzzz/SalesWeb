@@ -12,8 +12,7 @@ import com.project.web_tamplate_marketplace.repository.TemplateRepository;
 public class TemplateService {
 
     private final TemplateRepository templateRepository;
-    @Autowired
-    private TemplateService templateService;
+
 
     TemplateService(TemplateRepository templateRepository) {
         this.templateRepository = templateRepository;

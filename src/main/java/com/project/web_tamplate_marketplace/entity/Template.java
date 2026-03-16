@@ -2,7 +2,7 @@ package com.project.web_tamplate_marketplace.entity;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.Locale.Category;
+import com.project.web_tamplate_marketplace.entity.Category;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
