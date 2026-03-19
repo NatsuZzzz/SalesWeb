@@ -3,7 +3,8 @@ package com.project.web_tamplate_marketplace.entity;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.*;
-
+import lombok.Data;
+@Data
 @Entity
 @Table(name = "contact_requests")
 public class ContactRequest {

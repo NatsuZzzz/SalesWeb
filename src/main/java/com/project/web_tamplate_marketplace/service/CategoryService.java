@@ -5,15 +5,14 @@ import com.project.web_tamplate_marketplace.repository.CategoryRepository;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Service;
 
 @Service
 public class CategoryService {
     
     private final CategoryRepository categoryRepository;
-    @Autowired
-    private CategoryRepository CategoryRepository;
+    
     CategoryService(CategoryRepository categoryRepository) {
         this.categoryRepository = categoryRepository;
     }
